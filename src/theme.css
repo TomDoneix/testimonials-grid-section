@@ -29,10 +29,10 @@
 
 @font-face {
   font-family: barlow-medium;
-  src: url(/fonts/BarlowSemiCondensed-Medium.ttf);
+  src: url(../public/fonts/BarlowSemiCondensed-Medium.ttf);
 }
 
 @font-face {
   font-family: barlow-semibold;
-  src: url(/fonts/BarlowSemiCondensed-SemiBold.ttf);
+  src: url(../public/fonts/BarlowSemiCondensed-SemiBold.ttf);
 }
