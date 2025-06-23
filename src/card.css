@@ -1,0 +1,109 @@
+article {
+  display: grid;
+  row-gap: var(--spacing__200);
+  padding: var(--spacing__400);
+  background: var(--white);
+  border-radius: var(--spacing__100);
+  box-shadow: 2.5rem 3.75rem 3.125rem -2.9375rem rgba(72, 85, 106, 0.25);
+  color: var(--grey__500);
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: start;
+  align-items: center;
+  row-gap: var(--spacing__50);
+}
+
+div img {
+  block-size: 2rem;
+  inline-size: 2rem;
+  grid-row: auto / span 2;
+  margin-inline-end: var(--spacing__200);
+  border-radius: 50%;
+  border: 0.125rem solid;
+}
+
+div p:first-of-type {
+  align-self: end;
+}
+
+div p:last-of-type {
+  align-self: start;
+  color: var(--grey__400);
+}
+
+article :last-child {
+  color: var(--grey__400);
+}
+
+/* specific card */
+
+.daniel img {
+  border-color: hsla(264, 82%, 70%, 1);
+}
+
+.walter {
+  background: var(--grey__500);
+}
+
+:is(.walter h1, .walter p:first-of-type) {
+  color: white;
+}
+
+.walter div p:last-of-type {
+  color: var(--grey__300);
+}
+
+.walter p:last-of-type {
+  color: var(--grey__100);
+}
+
+.walter img {
+  border-color: transparent;
+}
+
+.jeanette img {
+  border-color: transparent;
+}
+
+.patrick {
+  background: var(--darkblue);
+}
+
+.patrick img {
+  border-color: var(--purple__500);
+}
+
+.daniel {
+  --grey__500: white;
+  --grey__400: var(--purple__50);
+  background: var(--purple__500);
+}
+
+@media (min-width: 48rem) {
+  .daniel {
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 86% 0;
+  }
+}
+
+.patrick {
+  --grey__500: var(--grey__200);
+  --grey__400: var(--grey__100);
+}
+
+.patrick div p {
+  color: white;
+}
+
+.kira div p:last-of-type {
+  color: var(--grey__300);
+}
+
+.kira img {
+  border-color: transparent;
+}

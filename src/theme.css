@@ -1,0 +1,38 @@
+@theme {
+  --color-*: initial;
+  --purple__500: #733fc8;
+  --darkblue: #19202d;
+  --black: #121212;
+  --purple__300: #a775f1;
+  --purple__50: #ede4ff;
+  --grey__100: #e7eaee;
+  --grey__200: #cfcfcf;
+  --grey__400: #676d7e;
+  --grey__300: #A3AAB4;
+  --grey__500: #48556a;
+  --white: #ffffff;
+  --body__background: #f6f5f6;
+
+  --spacing-*: initial;
+  --spacing__50: 0.25rem;
+  --spacing__100: 0.5rem;
+  --spacing__200: 1rem;
+  --spacing__300: 1.5rem;
+  --spacing__400: 2rem;
+
+  --text-*: initial;
+  --textpreset1: 1.25rem;
+  --textpreset2: 0.8125rem;
+  --textpreset3: 0.8125rem;
+  --textpreset4: 0.6875rem;
+}
+
+@font-face {
+  font-family: barlow-medium;
+  src: url(../public/fonts/BarlowSemiCondensed-Medium.ttf);
+}
+
+@font-face {
+  font-family: barlow-semibold;
+  src: url(../public/fonts/BarlowSemiCondensed-SemiBold.ttf);
+}
