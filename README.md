@@ -26,12 +26,12 @@ Want some support on the challenge? [Join our community](https://www.frontendmen
 
 ### Screenshot
 
-<!-- ![](./screenshot.png) -->
+![](./screenshot.png)
 
 ### Links
 
-<!-- - Solution URL: [Add solution URL here](https://github.com/TomDoneix/four-card-feature-section) -->
-<!-- - Live Site URL: [live site URL here](https://four-card-feature-section-three-sepia.vercel.app/) -->
+- Solution URL: [Add solution URL here](https://github.com/TomDoneix/testimonials-grid-section)
+- Live Site URL: [live site URL here](https://testimonials-grid-section-three-rust.vercel.app/)
 
 ## My process
 
