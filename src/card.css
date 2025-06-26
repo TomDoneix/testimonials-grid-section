@@ -1,29 +1,29 @@
 article {
   display: grid;
-  row-gap: var(--spacing__200);
-  padding: var(--spacing__400);
+  row-gap: var(--spacing-200);
+  padding: var(--spacing-400);
+  border-radius: var(--spacing-100);
   background: var(--white);
-  border-radius: var(--spacing__100);
-  box-shadow: 2.5rem 3.75rem 3.125rem rgba(72, 85, 106, 0.25);
-  color: var(--grey__500);
+  box-shadow: 2.5rem 3.75rem 3.125rem rgb(72 85 106 / 25%);
+  color: var(--grey-500);
 }
 
 div {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, 1fr);
-  justify-content: start;
   align-items: center;
-  row-gap: var(--spacing__50);
+  justify-content: start;
+  row-gap: var(--spacing-50);
 }
 
 div img {
+  grid-row: auto / span 2;
   block-size: 2rem;
   inline-size: 2rem;
-  grid-row: auto / span 2;
-  margin-inline-end: var(--spacing__200);
-  border-radius: 50%;
+  margin-inline-end: var(--spacing-200);
   border: 0.125rem solid;
+  border-radius: 50%;
 }
 
 div p:first-of-type {
@@ -32,33 +32,33 @@ div p:first-of-type {
 
 div p:last-of-type {
   align-self: start;
-  color: var(--grey__400);
+  color: var(--grey-400);
 }
 
 article :last-child {
-  color: var(--grey__400);
+  color: var(--grey-400);
 }
 
 /* specific card */
 
 .daniel img {
-  border-color: hsla(264, 82%, 70%, 1);
+  border-color: hsl(264 82% 70%);
 }
 
 .walter {
-  background: var(--grey__500);
+  background: var(--grey-500);
 }
 
 :is(.walter h1, .walter p:first-of-type) {
-  color: white;
+  color: #ffffff;
 }
 
 .walter div p:last-of-type {
-  color: var(--grey__300);
+  color: var(--grey-300);
 }
 
 .walter p:last-of-type {
-  color: var(--grey__100);
+  color: var(--grey-100);
 }
 
 .walter img {
@@ -71,19 +71,23 @@ article :last-child {
 
 .patrick {
   background: var(--darkblue);
+
+  --grey-500: var(--grey-200);
+  --grey-400: var(--grey-100);
 }
 
 .patrick img {
-  border-color: var(--purple__500);
+  border-color: var(--purple-500);
 }
 
 .daniel {
-  --grey__500: white;
-  --grey__400: var(--purple__50);
-  background: var(--purple__500);
+  --grey-500: #FFFFFF;
+  --grey-400: var(--purple-50);
+
+  background: var(--purple-500);
 }
 
-@media (min-width: 48rem) {
+@media (width >= 48rem) {
   .daniel {
     background-image: url("/images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
@@ -91,17 +95,12 @@ article :last-child {
   }
 }
 
-.patrick {
-  --grey__500: var(--grey__200);
-  --grey__400: var(--grey__100);
-}
-
 .patrick div p {
-  color: white;
+  color: #FFFFFF;
 }
 
 .kira div p:last-of-type {
-  color: var(--grey__300);
+  color: var(--grey-300);
 }
 
 .kira img {

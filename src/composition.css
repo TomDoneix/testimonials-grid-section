@@ -1,36 +1,36 @@
 body {
   height: 100vh;
-  font-family: "barlow-medium", system-ui, sans-serif;
+  padding: clamp(4.5625rem, 1.1294rem + 14.6479vw, 14.3125rem) clamp(2.1875rem, -0.6074rem + 11.9249vw, 10.125rem) clamp(4.5625rem, 1.3715rem + 13.615vw, 13.625rem);
+  background: var(--body-background);
+  font-family: barlow-medium, system-ui, sans-serif;
   font-size: var(--textpreset3);
   line-height: 1.4;
-  background: var(--body__background);
-  padding-block-start: clamp(4.5625rem, 1.1294rem + 14.6479vw, 14.3125rem);
-  padding-block-end: clamp(4.5625rem, 1.3715rem + 13.615vw, 13.625rem);
-  padding-inline: clamp(2.1875rem, -0.6074rem + 11.9249vw, 10.125rem);
 }
 
 main {
-  max-inline-size: 69.625rem;
   display: grid;
+  max-inline-size: 69.625rem;
   margin-inline: auto;
-  gap: var(--spacing__400);
+  gap: var(--spacing-400);
 }
 
-@media (min-width: 48rem) {
+@media (width >= 48rem) {
   main {
     grid-template-columns: repeat(2, 1fr);
   }
+
   :is(.daniel, .patrick, .kira) {
     grid-column: auto / span 2;
   }
 }
 
-@media (min-width: 90rem) {
+@media (width >= 90rem) {
   main {
     grid-template-columns: repeat(4, 1fr);
     align-items: start;
-    row-gap: var(--spacing__300);
+    row-gap: var(--spacing-300);
   }
+
   :is(.kira) {
     grid-column: 4;
     grid-row: 1 / span 2;
@@ -38,7 +38,7 @@ main {
 }
 
 h1 {
-  font-family: "barlow-semibold", system-ui, sans-serif;
+  font-family: barlow-semibold, system-ui, sans-serif;
   font-size: var(--textpreset1);
   line-height: 1.2;
 }
